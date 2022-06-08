@@ -1,0 +1,45 @@
+@use '../util/' as *;
+@use '../base/' as *;
+
+.btn {
+  i {
+    color: grey;
+    margin-right: rem(30);
+  }
+  &__main {
+    color: #fff;
+    background: linear-gradient(0.48turn, $secondary, $primary);
+    padding: rem(15);
+    font-size: rem(16);
+    border: transparent;
+    border-radius: rem(40);
+    box-shadow: rem(5) rem(5) rem(5) hsla(0, 0%, 0%, 0.137);
+  }
+  &__fonction {
+    color: inherit;
+    background-color: hsl(0, 17%, 98%);
+    padding: rem(20);
+    font-size: rem(16);
+    border: transparent;
+    border-radius: rem(15);
+    margin: rem(20);
+    box-shadow: rem(5) rem(5) rem(5) hsla(0, 0%, 0%, 0.137);
+    width: rem(300);
+    height: rem(70);
+    position: relative;
+  }
+}
+
+.btn span {
+  padding: rem(5) rem(9);
+  background-color: $primary;
+  color: #fff;
+  border-radius: rem(50);
+  position: absolute;
+  left: rem(-10);
+  top: rem(25);
+}
+
+.fa-mobile-screen {
+  margin-left: rem(-15);
+}

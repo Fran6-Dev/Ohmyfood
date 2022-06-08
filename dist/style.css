@@ -1,2 +1,65 @@
+html {
+  font-family: "Roboto", sans-serif;
+}
 
-/*# sourceMappingURL=style.css.map *//*# sourceMappingURL=style.css.map */
+p {
+  font-weight: 300;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+
+.btn i {
+  color: grey;
+  margin-right: 1.875rem;
+}
+.btn__main {
+  color: #fff;
+  background: linear-gradient(0.48turn, #ff79da, #9356dc);
+  padding: 0.9375rem;
+  font-size: 1rem;
+  border: transparent;
+  border-radius: 2.5rem;
+  box-shadow: 0.3125rem 0.3125rem 0.3125rem rgba(0, 0, 0, 0.137);
+}
+.btn__fonction {
+  color: inherit;
+  background-color: #fbf9f9;
+  padding: 1.25rem;
+  font-size: 1rem;
+  border: transparent;
+  border-radius: 0.9375rem;
+  margin: 1.25rem;
+  box-shadow: 0.3125rem 0.3125rem 0.3125rem rgba(0, 0, 0, 0.137);
+  width: 18.75rem;
+  height: 4.375rem;
+  position: relative;
+}
+
+.btn span {
+  padding: 0.3125rem 0.5625rem;
+  background-color: #9356dc;
+  color: #fff;
+  border-radius: 3.125rem;
+  position: absolute;
+  left: -0.625rem;
+  top: 1.5625rem;
+}
+
+.fa-mobile-screen {
+  margin-left: -0.9375rem;
+}/*# sourceMappingURL=style.css.map */

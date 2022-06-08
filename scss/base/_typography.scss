@@ -1,0 +1,12 @@
+@use '../util/' as f;
+
+$font: "Roboto", sans-serif;
+$title-font: "Shrikhand", cursive;
+
+html {
+  font-family: $font;
+}
+
+p {
+  font-weight: 300;
+}
