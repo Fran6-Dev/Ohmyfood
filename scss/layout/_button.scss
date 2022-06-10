@@ -6,6 +6,7 @@
     color: grey;
     margin-right: rem(30);
   }
+
   &__main {
     color: #fff;
     background: linear-gradient(0.48turn, $secondary, $primary);
@@ -27,6 +28,12 @@
     width: rem(300);
     height: rem(70);
     position: relative;
+    &:hover {
+      background-color: rgba(146, 86, 220, 0.123);
+      i {
+        color: $primary;
+      }
+    }
   }
 }
 

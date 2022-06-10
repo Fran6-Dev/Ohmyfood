@@ -1,0 +1,24 @@
+@use '../util/' as *;
+
+header {
+  padding: rem(15) 0;
+  box-shadow: 0 rem(6) rem(2) rem(-2) lightgray;
+}
+
+.localisation {
+  background-color: hsla(0, 0%, 83%, 0.603);
+  padding: rem(8) 0;
+}
+
+.reservation {
+  background-color: hsla(0, 0%, 83%, 0.349);
+  padding: rem(30) 0;
+}
+
+.reservation > h2 {
+  margin: 0;
+}
+
+.restaurant {
+  background-color: hsla(0, 0%, 83%, 0.349);
+}
