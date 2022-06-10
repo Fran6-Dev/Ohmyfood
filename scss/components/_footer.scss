@@ -1,0 +1,27 @@
+@use '../base/' as *;
+
+.titre-footer h3 {
+  font-family: $title-font;
+  color: #fff;
+}
+
+footer p {
+  color: #fff;
+}
+
+footer {
+  padding: 20px;
+}
+
+footer .fa-utensils {
+  margin-right: 15px;
+}
+
+footer .fa-handshake-angle {
+  margin-right: 8px;
+}
+
+footer p,
+footer h3 {
+  margin-top: 0;
+}

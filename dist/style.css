@@ -6,6 +6,10 @@ p {
   font-weight: 300;
 }
 
+h2 {
+  margin-left: 1.5625rem;
+}
+
 html {
   box-sizing: border-box;
   font-size: 100%;
@@ -98,33 +102,67 @@ header {
   background-color: rgba(212, 212, 212, 0.349);
 }
 
+footer {
+  background-color: rgba(0, 0, 0, 0.795);
+}
+
+.localisation {
+  display: flex;
+  justify-content: center;
+}
+
+.reservation {
+  text-align: center;
+  padding: 1.5625rem;
+}
+
+.reservation h1 {
+  max-width: 37.5rem;
+  margin-inline: auto;
+}
+
+.reservation p {
+  max-width: 37.5rem;
+  margin-inline: auto;
+}
+
+.fonctionnement .button {
+  text-align: center;
+}
+
 .restaurant img {
-  width: 400px;
-  height: 250px;
+  width: 21.25rem;
+  height: 11.25rem;
   -o-object-fit: cover;
      object-fit: cover;
-  border-radius: 20px 20px 0 0;
+  border-radius: 1.25rem 1.25rem 0 0;
+}
+
+.restaurant {
+  padding: 1.25rem 0;
 }
 
 .card {
-  width: 400px;
+  width: 21.25rem;
   background-color: #fff;
-  border-radius: 20px;
+  border-radius: 1.25rem;
+  margin-inline: auto;
+  margin-bottom: 1.5625rem;
 }
 
 .description {
   display: flex;
   justify-content: space-between;
-  margin: 5px;
+  margin: 0.3125rem;
 }
 
 .description h4,
 .description p {
-  margin: 10px;
+  margin: 0.625rem;
 }
 
 .coeur {
-  margin: 15px;
+  margin: 0.9375rem;
   cursor: pointer;
   border: none;
   background-color: white;
@@ -139,15 +177,15 @@ header {
 .coeur:visited fa-heart {
   background-clip: text;
   -webkit-background-clip: text;
-  background-image: linear-gradient(175deg, #fc91de, #a778e2);
+  background-image: linear-gradient(175deg, #ff79da, #9356dc);
 }
 
 .fa-heart {
-  font-size: 28px;
+  font-size: 1.75rem;
   color: transparent;
-  left: -45px;
-  top: -1px;
-  -webkit-text-stroke-width: 1px;
+  left: -2.8125rem;
+  top: -0.0625rem;
+  -webkit-text-stroke-width: 0.0625rem;
   -webkit-text-stroke-color: black;
 }
 
@@ -156,64 +194,64 @@ header {
     background-image: linear-gradient(175deg, transparent 100%);
   }
   5% {
-    background-image: linear-gradient(175deg, transparent 70%, #fc91de 1%, #a778e2 2%);
+    background-image: linear-gradient(175deg, transparent 70%, #ff79da 1%, #9356dc 2%);
   }
   10% {
-    background-image: linear-gradient(175deg, transparent 90%, #fc91de 5%, #a778e2 5%);
+    background-image: linear-gradient(175deg, transparent 90%, #ff79da 5%, #9356dc 5%);
   }
   15% {
-    background-image: linear-gradient(175deg, transparent 85%, #fc91de 7%, #a778e2 8%);
+    background-image: linear-gradient(175deg, transparent 85%, #ff79da 7%, #9356dc 8%);
   }
   20% {
-    background-image: linear-gradient(175deg, transparent 80%, #fc91de 10%, #a778e2 10%);
+    background-image: linear-gradient(175deg, transparent 80%, #ff79da 10%, #9356dc 10%);
   }
   25% {
-    background-image: linear-gradient(175deg, transparent 75%, #fc91de 12%, #a778e2 13%);
+    background-image: linear-gradient(175deg, transparent 75%, #ff79da 12%, #9356dc 13%);
   }
   30% {
-    background-image: linear-gradient(175deg, transparent 70%, #fc91de 15%, #a778e2 15%);
+    background-image: linear-gradient(175deg, transparent 70%, #ff79da 15%, #9356dc 15%);
   }
   35% {
-    background-image: linear-gradient(175deg, transparent 65%, #fc91de 17%, #a778e2 18%);
+    background-image: linear-gradient(175deg, transparent 65%, #ff79da 17%, #9356dc 18%);
   }
   40% {
-    background-image: linear-gradient(175deg, transparent 60%, #fc91de 20%, #a778e2 20%);
+    background-image: linear-gradient(175deg, transparent 60%, #ff79da 20%, #9356dc 20%);
   }
   45% {
-    background-image: linear-gradient(175deg, transparent 55%, #fc91de 22%, #a778e2 23%);
+    background-image: linear-gradient(175deg, transparent 55%, #ff79da 22%, #9356dc 23%);
   }
   50% {
-    background-image: linear-gradient(175deg, transparent 50%, #fc91de 25%, #a778e2 25%);
+    background-image: linear-gradient(175deg, transparent 50%, #ff79da 25%, #9356dc 25%);
   }
   55% {
-    background-image: linear-gradient(175deg, transparent 45%, #fc91de 27%, #a778e2 28%);
+    background-image: linear-gradient(175deg, transparent 45%, #ff79da 27%, #9356dc 28%);
   }
   60% {
-    background-image: linear-gradient(175deg, transparent 40%, #fc91de 30%, #a778e2 30%);
+    background-image: linear-gradient(175deg, transparent 40%, #ff79da 30%, #9356dc 30%);
   }
   65% {
-    background-image: linear-gradient(175deg, transparent 35%, #fc91de 32%, #a778e2 33%);
+    background-image: linear-gradient(175deg, transparent 35%, #ff79da 32%, #9356dc 33%);
   }
   70% {
-    background-image: linear-gradient(175deg, transparent 30%, #fc91de 35%, #a778e2 35%);
+    background-image: linear-gradient(175deg, transparent 30%, #ff79da 35%, #9356dc 35%);
   }
   75% {
-    background-image: linear-gradient(175deg, transparent 25%, #fc91de 37%, #a778e2 38%);
+    background-image: linear-gradient(175deg, transparent 25%, #ff79da 37%, #9356dc 38%);
   }
   80% {
-    background-image: linear-gradient(175deg, transparent 20%, #fc91de 40%, #a778e2 40%);
+    background-image: linear-gradient(175deg, transparent 20%, #ff79da 40%, #9356dc 40%);
   }
   85% {
-    background-image: linear-gradient(175deg, transparent 15%, #fc91de 42%, #a778e2 43%);
+    background-image: linear-gradient(175deg, transparent 15%, #ff79da 42%, #9356dc 43%);
   }
   90% {
-    background-image: linear-gradient(175deg, transparent 10%, #fc91de 45%, #a778e2 45%);
+    background-image: linear-gradient(175deg, transparent 10%, #ff79da 45%, #9356dc 45%);
   }
   95% {
-    background-image: linear-gradient(175deg, transparent 5%, #fc91de 47%, #a778e2 48%);
+    background-image: linear-gradient(175deg, transparent 5%, #ff79da 47%, #9356dc 48%);
   }
   100% {
-    background-image: linear-gradient(175deg, #fc91de, #a778e2);
+    background-image: linear-gradient(175deg, #ff79da, #9356dc);
   }
 }
 
@@ -222,63 +260,97 @@ header {
     background-image: linear-gradient(175deg, transparent 100%);
   }
   5% {
-    background-image: linear-gradient(175deg, transparent 70%, #fc91de 1%, #a778e2 2%);
+    background-image: linear-gradient(175deg, transparent 70%, #ff79da 1%, #9356dc 2%);
   }
   10% {
-    background-image: linear-gradient(175deg, transparent 90%, #fc91de 5%, #a778e2 5%);
+    background-image: linear-gradient(175deg, transparent 90%, #ff79da 5%, #9356dc 5%);
   }
   15% {
-    background-image: linear-gradient(175deg, transparent 85%, #fc91de 7%, #a778e2 8%);
+    background-image: linear-gradient(175deg, transparent 85%, #ff79da 7%, #9356dc 8%);
   }
   20% {
-    background-image: linear-gradient(175deg, transparent 80%, #fc91de 10%, #a778e2 10%);
+    background-image: linear-gradient(175deg, transparent 80%, #ff79da 10%, #9356dc 10%);
   }
   25% {
-    background-image: linear-gradient(175deg, transparent 75%, #fc91de 12%, #a778e2 13%);
+    background-image: linear-gradient(175deg, transparent 75%, #ff79da 12%, #9356dc 13%);
   }
   30% {
-    background-image: linear-gradient(175deg, transparent 70%, #fc91de 15%, #a778e2 15%);
+    background-image: linear-gradient(175deg, transparent 70%, #ff79da 15%, #9356dc 15%);
   }
   35% {
-    background-image: linear-gradient(175deg, transparent 65%, #fc91de 17%, #a778e2 18%);
+    background-image: linear-gradient(175deg, transparent 65%, #ff79da 17%, #9356dc 18%);
   }
   40% {
-    background-image: linear-gradient(175deg, transparent 60%, #fc91de 20%, #a778e2 20%);
+    background-image: linear-gradient(175deg, transparent 60%, #ff79da 20%, #9356dc 20%);
   }
   45% {
-    background-image: linear-gradient(175deg, transparent 55%, #fc91de 22%, #a778e2 23%);
+    background-image: linear-gradient(175deg, transparent 55%, #ff79da 22%, #9356dc 23%);
   }
   50% {
-    background-image: linear-gradient(175deg, transparent 50%, #fc91de 25%, #a778e2 25%);
+    background-image: linear-gradient(175deg, transparent 50%, #ff79da 25%, #9356dc 25%);
   }
   55% {
-    background-image: linear-gradient(175deg, transparent 45%, #fc91de 27%, #a778e2 28%);
+    background-image: linear-gradient(175deg, transparent 45%, #ff79da 27%, #9356dc 28%);
   }
   60% {
-    background-image: linear-gradient(175deg, transparent 40%, #fc91de 30%, #a778e2 30%);
+    background-image: linear-gradient(175deg, transparent 40%, #ff79da 30%, #9356dc 30%);
   }
   65% {
-    background-image: linear-gradient(175deg, transparent 35%, #fc91de 32%, #a778e2 33%);
+    background-image: linear-gradient(175deg, transparent 35%, #ff79da 32%, #9356dc 33%);
   }
   70% {
-    background-image: linear-gradient(175deg, transparent 30%, #fc91de 35%, #a778e2 35%);
+    background-image: linear-gradient(175deg, transparent 30%, #ff79da 35%, #9356dc 35%);
   }
   75% {
-    background-image: linear-gradient(175deg, transparent 25%, #fc91de 37%, #a778e2 38%);
+    background-image: linear-gradient(175deg, transparent 25%, #ff79da 37%, #9356dc 38%);
   }
   80% {
-    background-image: linear-gradient(175deg, transparent 20%, #fc91de 40%, #a778e2 40%);
+    background-image: linear-gradient(175deg, transparent 20%, #ff79da 40%, #9356dc 40%);
   }
   85% {
-    background-image: linear-gradient(175deg, transparent 15%, #fc91de 42%, #a778e2 43%);
+    background-image: linear-gradient(175deg, transparent 15%, #ff79da 42%, #9356dc 43%);
   }
   90% {
-    background-image: linear-gradient(175deg, transparent 10%, #fc91de 45%, #a778e2 45%);
+    background-image: linear-gradient(175deg, transparent 10%, #ff79da 45%, #9356dc 45%);
   }
   95% {
-    background-image: linear-gradient(175deg, transparent 5%, #fc91de 47%, #a778e2 48%);
+    background-image: linear-gradient(175deg, transparent 5%, #ff79da 47%, #9356dc 48%);
   }
   100% {
-    background-image: linear-gradient(175deg, #fc91de, #a778e2);
+    background-image: linear-gradient(175deg, #ff79da, #9356dc);
   }
+}
+.titre-footer h3 {
+  font-family: "Shrikhand", cursive;
+  color: #fff;
+}
+
+footer p {
+  color: #fff;
+}
+
+footer {
+  padding: 20px;
+}
+
+footer .fa-utensils {
+  margin-right: 15px;
+}
+
+footer .fa-handshake-angle {
+  margin-right: 8px;
+}
+
+footer p,
+footer h3 {
+  margin-top: 0;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+}
+
+header img {
+  width: 12.5rem;
 }/*# sourceMappingURL=style.css.map */
