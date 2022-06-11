@@ -32,6 +32,9 @@ body {
   padding: 0;
 }
 
+.btn:hover {
+  cursor: pointer;
+}
 .btn i {
   color: grey;
   margin-right: 1.875rem;
@@ -45,6 +48,9 @@ body {
   border-radius: 2.5rem;
   box-shadow: 0.3125rem 0.3125rem 0.3125rem rgba(0, 0, 0, 0.137);
 }
+.btn__main:hover {
+  transform: scale(1.2);
+}
 .btn__fonction {
   color: inherit;
   background-color: #fbf9f9;
@@ -54,7 +60,7 @@ body {
   border-radius: 0.9375rem;
   margin: 1.25rem;
   box-shadow: 0.3125rem 0.3125rem 0.3125rem rgba(0, 0, 0, 0.137);
-  width: 18.75rem;
+  width: 20.625rem;
   height: 4.375rem;
   position: relative;
 }
@@ -113,12 +119,13 @@ footer {
 
 .reservation {
   text-align: center;
-  padding: 1.5625rem;
+  padding: 2.8125rem;
 }
 
 .reservation h1 {
   max-width: 37.5rem;
   margin-inline: auto;
+  margin-top: 0;
 }
 
 .reservation p {
@@ -128,6 +135,7 @@ footer {
 
 .fonctionnement .button {
   text-align: center;
+  padding: 1.25rem;
 }
 
 .restaurant img {
@@ -148,6 +156,18 @@ footer {
   border-radius: 1.25rem;
   margin-inline: auto;
   margin-bottom: 1.5625rem;
+  position: relative;
+}
+
+.card span {
+  width: 5.3125rem;
+  background-color: #99e2d0;
+  padding: 0.625rem;
+  border-radius: 0.3125rem;
+  color: #218a70;
+  position: absolute;
+  left: 242;
+  bottom: 198;
 }
 
 .description {

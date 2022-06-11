@@ -18,6 +18,18 @@
   border-radius: rem(20);
   margin-inline: auto;
   margin-bottom: rem(25);
+  position: relative;
+}
+
+.card span {
+  width: rem(85);
+  background-color: $tertiary;
+  padding: rem(10);
+  border-radius: rem(5);
+  color: #218a70;
+  position: absolute;
+  left: 242;
+  bottom: 198;
 }
 
 .description {

@@ -2,6 +2,9 @@
 @use '../base/' as *;
 
 .btn {
+  &:hover {
+    cursor: pointer;
+  }
   i {
     color: grey;
     margin-right: rem(30);
@@ -15,6 +18,9 @@
     border: transparent;
     border-radius: rem(40);
     box-shadow: rem(5) rem(5) rem(5) hsla(0, 0%, 0%, 0.137);
+    &:hover {
+      transform: scale(1.2);
+    }
   }
   &__fonction {
     color: inherit;
@@ -25,7 +31,7 @@
     border-radius: rem(15);
     margin: rem(20);
     box-shadow: rem(5) rem(5) rem(5) hsla(0, 0%, 0%, 0.137);
-    width: rem(300);
+    width: rem(330);
     height: rem(70);
     position: relative;
     &:hover {
