@@ -85,6 +85,16 @@ body {
   margin-left: -0.9375rem;
 }
 
+.btn-commander {
+  display: flex;
+  margin: 2.5rem 0;
+}
+
+.commander {
+  width: 200px;
+  margin-inline: auto;
+}
+
 header {
   padding: 0.9375rem 0;
   box-shadow: 0 0.375rem 0.125rem -0.125rem lightgray;
@@ -373,4 +383,82 @@ header {
 
 header img {
   width: 12.5rem;
+}
+
+.img-top {
+  width: 31.25rem;
+  margin-inline: auto;
+}
+
+.img-top img {
+  width: 31.25rem;
+  margin-inline: auto;
+}
+
+.menu {
+  background-color: #efebeb;
+  border-radius: 2.1875rem 2.1875rem 0 0;
+  position: relative;
+  top: -70;
+  width: 31.25rem;
+  margin-inline: auto;
+  padding: 1.25rem;
+}
+
+.titre-menu h2 {
+  font-family: "Shrikhand", cursive;
+  font-size: 1.75rem;
+  margin: 0;
+  padding: 1.25rem 0.3125rem;
+}
+
+.titre-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.titre-menu i {
+  position: relative;
+}
+
+.menu h4 {
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+.menu hr {
+  border: solid #99e2d0 2px;
+  width: 2.5rem;
+  position: relative;
+  left: -13.125rem;
+  top: -0.9375rem;
+}
+
+.liste {
+  width: 25rem;
+  background: #fff;
+  border-radius: 0.9375rem;
+}
+
+.choix-1 {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.625rem;
+  margin-bottom: 1.25rem;
+}
+
+.choix-1 h5,
+.choix-1 p {
+  margin: 0;
+  padding: 0.25rem;
+}
+
+.choix-1 h5 {
+  font-size: 20px;
+}
+
+.prix {
+  position: relative;
+  top: 37;
 }/*# sourceMappingURL=style.css.map */

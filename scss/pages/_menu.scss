@@ -1,0 +1,81 @@
+@use '../util/' as *;
+@use '../base/' as *;
+@use '../layout' as *;
+
+.img-top {
+  width: rem(500);
+  margin-inline: auto;
+}
+
+.img-top img {
+  width: rem(500);
+  margin-inline: auto;
+}
+
+.menu {
+  background-color: hsl(0, 11%, 93%);
+  border-radius: rem(35) rem(35) 0 0;
+  position: relative;
+  top: -70;
+  width: rem(500);
+  margin-inline: auto;
+  padding: rem(20);
+}
+
+.titre-menu h2 {
+  font-family: $title-font;
+  font-size: rem(28);
+  margin: 0;
+  padding: rem(20) rem(5);
+}
+
+.titre-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.titre-menu i {
+  position: relative;
+}
+.menu h4 {
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+.menu hr {
+  border: solid $tertiary 2px;
+  width: rem(40);
+  position: relative;
+  left: rem(-210);
+  top: rem(-15);
+}
+
+.liste {
+  width: rem(400);
+  background: #fff;
+  border-radius: rem(15);
+  //   margin-inline: auto;
+}
+
+.choix-1 {
+  display: flex;
+  justify-content: space-between;
+  padding: rem(10);
+  margin-bottom: rem(20);
+}
+
+.choix-1 h5,
+.choix-1 p {
+  margin: 0;
+  padding: rem(4);
+}
+
+.choix-1 h5 {
+  font-size: 20px;
+}
+
+.prix {
+  position: relative;
+  top: 37;
+}
