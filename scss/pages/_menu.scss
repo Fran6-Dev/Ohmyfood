@@ -3,12 +3,12 @@
 @use '../layout' as *;
 
 .img-top {
-  width: rem(500);
+  width: rem(440);
   margin-inline: auto;
 }
 
 .img-top img {
-  width: rem(500);
+  width: rem(440);
   margin-inline: auto;
 }
 
@@ -17,7 +17,8 @@
   border-radius: rem(35) rem(35) 0 0;
   position: relative;
   top: -70;
-  width: rem(500);
+  margin-bottom: -70;
+  width: rem(440);
   margin-inline: auto;
   padding: rem(20);
 }
@@ -37,6 +38,7 @@
 
 .titre-menu i {
   position: relative;
+  left: -15;
 }
 .menu h4 {
   text-transform: uppercase;
@@ -47,8 +49,8 @@
   border: solid $tertiary 2px;
   width: rem(40);
   position: relative;
-  left: rem(-210);
-  top: rem(-15);
+  left: -180;
+  top: -15;
 }
 
 .liste {
@@ -61,21 +63,38 @@
 .choix-1 {
   display: flex;
   justify-content: space-between;
-  padding: rem(10);
   margin-bottom: rem(20);
 }
 
 .choix-1 h5,
 .choix-1 p {
   margin: 0;
-  padding: rem(4);
+}
+.choix-1 h5 {
+  font-size: rem(20);
+  padding: rem(10) rem(10) rem(10) rem(15);
 }
 
-.choix-1 h5 {
-  font-size: 20px;
+.choix-1 p {
+  padding: 0 0 rem(10) rem(15);
 }
 
 .prix {
   position: relative;
-  top: 37;
+  top: 45;
+  right: 18;
+}
+
+.liste {
+  .check .fa-solid {
+    overflow: hidden;
+    &:hover {
+      background-color: $tertiary;
+      color: #fff;
+      position: relative;
+      right: -1;
+      padding: rem(30);
+      border-radius: 0 rem(15) rem(15) 0;
+    }
+  }
 }
