@@ -3,13 +3,13 @@
 @use '../layout' as *;
 
 .img-top {
-  width: rem(440);
-  margin-inline: auto;
+  max-height: rem(500);
 }
 
 .img-top img {
-  width: rem(440);
-  margin-inline: auto;
+  width: 100%;
+  object-fit: cover;
+  max-height: rem(500);
 }
 
 .menu {
@@ -18,9 +18,18 @@
   position: relative;
   top: -70;
   margin-bottom: -70;
-  width: rem(440);
+  width: 100%;
   margin-inline: auto;
   padding: rem(20);
+  max-width: rem(1300);
+}
+
+.sous-menu {
+  display: grid;
+  @media screen and (min-width: 65rem) {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: rem(16);
+  }
 }
 
 .titre-menu h2 {
@@ -43,14 +52,17 @@
 .menu h4 {
   text-transform: uppercase;
   font-weight: 300;
-}
-
-.menu hr {
-  border: solid $tertiary 2px;
-  width: rem(40);
   position: relative;
-  left: -180;
-  top: -15;
+  padding-bottom: rem(10);
+  &:after {
+    content: "";
+    width: rem(40);
+    height: rem(4);
+    background-color: $tertiary;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
 }
 
 .nom-plat,
@@ -62,7 +74,6 @@
 }
 
 .liste {
-  width: rem(400);
   background: #fff;
   border-radius: rem(15);
   box-shadow: rem(5) rem(5) rem(5) hsla(0, 0%, 0%, 0.137);

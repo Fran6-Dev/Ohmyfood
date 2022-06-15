@@ -1,4 +1,5 @@
 @use '../base/' as *;
+@use '../util/' as *;
 
 .titre-footer h3 {
   font-family: $title-font;
@@ -9,8 +10,11 @@ footer p {
   color: #fff;
 }
 
-footer {
-  padding: 20px;
+.footer-container {
+  padding: rem(20);
+  max-width: rem(1300);
+  margin-inline: auto;
+  position: relative;
 }
 
 footer .fa-utensils {
