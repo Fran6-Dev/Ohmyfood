@@ -437,10 +437,19 @@ header img {
   top: -15;
 }
 
+.nom-plat,
+.plat-titre,
+.plat-description {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
 .liste {
   width: 25rem;
   background: #fff;
   border-radius: 0.9375rem;
+  box-shadow: 0.3125rem 0.3125rem 0.3125rem rgba(0, 0, 0, 0.137);
 }
 
 .choix-1 {
@@ -466,17 +475,20 @@ header img {
 .prix {
   position: relative;
   top: 45;
-  right: 18;
+  right: -100;
+  height: 1.5625rem;
 }
 
-.liste .check .fa-solid {
-  overflow: hidden;
-}
-.liste .check .fa-solid:hover {
+.check .fa-solid {
   background-color: #99e2d0;
+  cursor: pointer;
   color: #fff;
   position: relative;
   right: -1;
   padding: 1.875rem;
   border-radius: 0 0.9375rem 0.9375rem 0;
+  opacity: 0;
+}
+.check .fa-solid:hover {
+  opacity: 1;
 }/*# sourceMappingURL=style.css.map */

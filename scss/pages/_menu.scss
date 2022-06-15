@@ -53,10 +53,19 @@
   top: -15;
 }
 
+.nom-plat,
+.plat-titre,
+.plat-description {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
 .liste {
   width: rem(400);
   background: #fff;
   border-radius: rem(15);
+  box-shadow: rem(5) rem(5) rem(5) hsla(0, 0%, 0%, 0.137);
   //   margin-inline: auto;
 }
 
@@ -82,19 +91,20 @@
 .prix {
   position: relative;
   top: 45;
-  right: 18;
+  right: -100;
+  height: rem(25);
 }
 
-.liste {
-  .check .fa-solid {
-    overflow: hidden;
-    &:hover {
-      background-color: $tertiary;
-      color: #fff;
-      position: relative;
-      right: -1;
-      padding: rem(30);
-      border-radius: 0 rem(15) rem(15) 0;
-    }
+.check .fa-solid {
+  background-color: $tertiary;
+  cursor: pointer;
+  color: #fff;
+  position: relative;
+  right: -1;
+  padding: rem(30);
+  border-radius: 0 rem(15) rem(15) 0;
+  opacity: 0;
+  &:hover {
+    opacity: 1;
   }
 }
