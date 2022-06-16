@@ -2,22 +2,32 @@
 @use '../base/' as *;
 
 .restaurant img {
-  width: rem(340);
+  width: 100%;
   height: rem(180);
   object-fit: cover;
   border-radius: rem(20) rem(20) 0 0;
 }
 
 .restaurant {
-  padding: rem(20) 0;
+  padding: rem(20) rem(20);
+}
+
+.allCards {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  column-gap: 2rem;
+  row-gap: 2rem;
+  max-width: rem(1300);
+  margin-inline: auto;
+  @media (min-width: 64rem) {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .card {
-  width: rem(340);
+  width: 100%;
   background-color: #fff;
   border-radius: rem(20);
-  margin-inline: auto;
-  margin-bottom: rem(25);
   position: relative;
 }
 
@@ -28,8 +38,8 @@
   border-radius: rem(5);
   color: #218a70;
   position: absolute;
-  left: 242;
-  bottom: 198;
+  top: 20;
+  right: 20;
 }
 
 .description {
@@ -47,7 +57,7 @@
   margin: rem(15);
   cursor: pointer;
   border: none;
-  background-color: white;
+  background-color: transparent;
   &:focus .fa-heart {
     background-clip: text;
     -webkit-background-clip: text;

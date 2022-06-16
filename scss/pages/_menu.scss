@@ -24,7 +24,7 @@
   max-width: rem(1300);
 }
 
-.sous-menu {
+section {
   display: grid;
   @media screen and (min-width: 65rem) {
     grid-template-columns: repeat(3, 1fr);
@@ -65,57 +65,88 @@
   }
 }
 
-.nom-plat,
-.plat-titre,
-.plat-description {
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
+.menuItem p {
+  margin: 0;
 }
 
-.liste {
+.sous-menu {
+  overflow: hidden;
+  max-width: 100%;
+  padding: 0 1rem;
+}
+
+.menuItem {
   background: #fff;
+  padding: 1rem;
   border-radius: rem(15);
   box-shadow: rem(5) rem(5) rem(5) hsla(0, 0%, 0%, 0.137);
-  //   margin-inline: auto;
-}
-
-.choix-1 {
+  overflow: hidden;
+  cursor: pointer;
   display: flex;
   justify-content: space-between;
   margin-bottom: rem(20);
-}
+  max-width: 100%;
 
-.choix-1 h5,
-.choix-1 p {
-  margin: 0;
-}
-.choix-1 h5 {
-  font-size: rem(20);
-  padding: rem(10) rem(10) rem(10) rem(15);
-}
+  &__nom-plat {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    flex: 1;
+  }
 
-.choix-1 p {
-  padding: 0 0 rem(10) rem(15);
-}
+  &__plat-titre {
+    margin: 0;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    padding-bottom: rem(10);
+    font-size: rem(18);
+  }
 
-.prix {
-  position: relative;
-  top: 45;
-  right: -100;
-  height: rem(25);
-}
+  &__plat-description {
+    margin: 0;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
 
-.check .fa-solid {
-  background-color: $tertiary;
-  cursor: pointer;
-  color: #fff;
-  position: relative;
-  right: -1;
-  padding: rem(30);
-  border-radius: 0 rem(15) rem(15) 0;
-  opacity: 0;
-  &:hover {
-    opacity: 1;
+  &__confirmation {
+    display: flex;
+    background-color: $tertiary;
+    width: 4rem;
+    margin: -1rem -5rem -1rem 1rem;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 rem(10) rem(10) 0;
+  }
+
+  &:hover &__confirmation {
+    margin-right: -1rem;
+  }
+
+  &__check {
+    height: 1.6rem;
+    width: 1.6rem;
+    display: flex;
+    background-color: #fff;
+    align-items: center;
+    justify-content: center;
+    border-radius: rem(15);
+    transform: rotate(180deg);
+  }
+
+  &__ok {
+    color: $tertiary;
+  }
+
+  &:hover &__check {
+    transform: rotate(0);
+  }
+
+  &__prix {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-left: 0.5rem;
   }
 }
