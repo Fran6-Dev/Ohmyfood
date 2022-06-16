@@ -20,6 +20,7 @@
     box-shadow: rem(5) rem(5) rem(5) hsla(0, 0%, 0%, 0.137);
     &:hover {
       transform: scale(1.2);
+      filter: brightness(1.1);
     }
   }
   &__fonction {
@@ -29,9 +30,9 @@
     font-size: rem(16);
     border: transparent;
     border-radius: rem(15);
-    margin: rem(20);
-    box-shadow: rem(5) rem(5) rem(5) hsla(0, 0%, 0%, 0.137);
-    width: rem(330);
+    box-shadow: rem(10) rem(10) rem(10) hsla(0, 0%, 0%, 0.137);
+    width: 100%;
+    margin-bottom: rem(20);
     height: rem(70);
     position: relative;
     &:hover {
