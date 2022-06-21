@@ -6,8 +6,14 @@
   color: #fff;
 }
 
-footer p {
-  color: #fff;
+footer a {
+  font-size: rem(16);
+  font-weight: 300;
+}
+
+.info-footer {
+  display: flex;
+  flex-direction: column;
 }
 
 .footer-container {
@@ -15,17 +21,18 @@ footer p {
   max-width: rem(1300);
   margin-inline: auto;
   position: relative;
+  color: #fff;
 }
 
 footer .fa-utensils {
-  margin-right: 15px;
+  margin-right: rem(15);
 }
 
 footer .fa-handshake-angle {
-  margin-right: 8px;
+  margin-right: rem(8);
 }
 
-footer p,
+footer a,
 footer h3 {
-  margin-top: 0;
+  margin-top: rem(5);
 }

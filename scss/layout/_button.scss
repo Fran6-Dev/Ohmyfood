@@ -8,6 +8,7 @@
   i {
     color: grey;
     margin-right: rem(30);
+    font-size: rem(20);
   }
 
   &__main {
@@ -55,7 +56,11 @@
 }
 
 .fa-mobile-screen {
-  margin-left: rem(-15);
+  margin-left: rem(-24);
+}
+
+.fa-list-ul {
+  margin-left: rem(-10);
 }
 
 .btn-commander {
@@ -64,6 +69,6 @@
 }
 
 .commander {
-  width: 200px;
+  width: rem(200);
   margin-inline: auto;
 }

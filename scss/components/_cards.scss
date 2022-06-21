@@ -15,11 +15,11 @@
 .allCards {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  column-gap: 2rem;
-  row-gap: 2rem;
+  column-gap: rem(32);
+  row-gap: rem(32);
   max-width: rem(1300);
   margin-inline: auto;
-  @media (min-width: 64rem) {
+  @media (min-width: rem(1024)) {
     grid-template-columns: repeat(2, 1fr);
   }
 }
@@ -38,8 +38,8 @@
   border-radius: rem(5);
   color: #218a70;
   position: absolute;
-  top: 20;
-  right: 20;
+  top: rem(20);
+  right: rem(20);
 }
 
 .description {
@@ -82,7 +82,11 @@
 
 @keyframes remplissage {
   0% {
-    background-image: linear-gradient(175deg, transparent 100%);
+    background-image: linear-gradient(
+      175deg,
+      transparent 100%,
+      transparent 100%
+    );
   }
   5% {
     background-image: linear-gradient(
