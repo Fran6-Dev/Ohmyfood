@@ -18,7 +18,7 @@
     font-size: rem(16);
     border: transparent;
     border-radius: rem(40);
-    box-shadow: rem(5) rem(5) rem(5) hsla(0, 0%, 0%, 0.137);
+    @include border-shadow;
     &:hover {
       transform: scale(1.2);
       filter: brightness(1.1);
@@ -31,7 +31,7 @@
     font-size: rem(16);
     border: transparent;
     border-radius: rem(15);
-    box-shadow: rem(10) rem(10) rem(10) hsla(0, 0%, 0%, 0.137);
+    @include border-shadow;
     width: 100%;
     margin-bottom: rem(20);
     height: rem(70);

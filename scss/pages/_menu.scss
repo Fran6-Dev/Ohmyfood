@@ -79,7 +79,7 @@ section {
   background: #fff;
   padding: rem(16);
   border-radius: rem(15);
-  box-shadow: rem(5) rem(5) rem(5) hsla(0, 0%, 0%, 0.137);
+  @include border-shadow;
   overflow: hidden;
   cursor: pointer;
   display: flex;
